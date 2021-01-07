@@ -1,11 +1,18 @@
-export const SORT_BY_PROGRAM_TYPE = '@@ProgramType'
+export const SORT_BY_TITLE = '@@SortByTitle'
+export const SORT_BY_YEAR = '@@SortByYear'
 export const SEARCH_BY_VALUE = '@@SearchValue'
 export const NEW_PAGE = '@@NewPage'
+export const SELECTED_PAGE = '@@SelectedPage'
 export const LOAD_DATA = '@@LoadData'
 
 // make payload typed
-export const sortByProgram = (payload: any) => ({
-    type: SORT_BY_PROGRAM_TYPE,
+export const sortByTitle = (payload: any) => ({
+    type: SORT_BY_TITLE,
+    payload
+})
+
+export const sortByYear = (payload: any) => ({
+    type: SORT_BY_YEAR,
     payload
 })
 

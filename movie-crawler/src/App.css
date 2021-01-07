@@ -1,3 +1,114 @@
 .App {
   text-align: center;
+  background-color:#E9E9E9;
 }
+/* css for movie container section */
+.movie-container {
+  display: flex;
+  justify-content:  space-around;
+  flex-wrap: wrap;
+}
+
+.movie-container div {
+  border: 1px #1b1919 solid;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 5px 2px 5px #aaaaaa;
+  cursor: pointer;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+.box {
+  flex-basis: 15%;
+}
+
+/* CSS for header */
+header {
+  height: 100px;
+  width: 100%;
+  background-color: #20232a;
+}
+header >.header {
+  color:#61dafb;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  padding-top: 20px;
+}
+
+/* CSS for footer */
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: #20232a;
+}
+footer >.footer {
+  color:#61dafb;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  padding-top: 20px;
+}
+
+/* CSS for sort and search section */
+.sort-container {
+  display: flex;
+  justify-content:  space-around;
+}
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* CSS for handling images */
+img {
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+}
+
+/* CSS for paging section */
+.section-paging {
+  margin: 20px 0 20px 0;
+}
+
+.button {
+  background-color: white;
+  color: black;
+  border: 3px solid #20232a;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+button:first-child {
+  margin-right: 20px;
+}
+
+/* add some media */
+
+@media(max-width: 500px) {
+  input[type=text]{
+    width: 80%;
+  }
+
+  select {
+    width: 100%;
+  }
+}
+ 
